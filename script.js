@@ -13,7 +13,7 @@ function lancerCompteur() {
     tempsRestant = parseInt(duree);
 
     if (isNaN(tempsRestant) || tempsRestant <= 0) {
-        alert("Veuillez entrer une durée valide !");
+        alert("Please enter a valid duration !");
         return;
     }
 
@@ -23,7 +23,7 @@ function lancerCompteur() {
     }
 
     // Réinitialiser le chrono à zéro au début
-    document.getElementById('timer-display').innerText = "Temps restant : 0";
+    document.getElementById('timer-display').innerText = "Time Remaining : 0";
 
     // Démarrer le chronomètre
     chronoActif = true;
@@ -31,10 +31,10 @@ function lancerCompteur() {
     timerInterval = setInterval(() => {
         if (tempsRestant > 0) {
             tempsRestant--;
-            document.getElementById('timer-display').innerText = `Temps restant : ${tempsRestant}`;
+            document.getElementById('timer-display').innerText = `Time Remaining : ${tempsRestant}`;
         } else {
             clearInterval(timerInterval);
-            document.getElementById('timer-display').innerText = "Temps écoulé !";
+            document.getElementById('timer-display').innerText = "Elapsed time !";
             activerSaisie(); // Activer les champs de saisie une fois le chrono écoulé
         }
     }, 1000);
@@ -55,7 +55,7 @@ function ajouterPoints(equipe) {
     const points = parseInt(pointsInput.value);
 
     if (isNaN(points) || points < 0) {
-        alert("Veuillez entrer un nombre valide de points !");
+        alert("Please enter a valid number of points!");
         return;
     }
 

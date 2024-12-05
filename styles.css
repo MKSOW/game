@@ -1,26 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
+    margin: 20px;
     padding: 0;
     background-color: #2B3161;
     color: white;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh; /* Assure que le corps couvre au moins 100% de la hauteur de la fenêtre */
+    width: 100%;
     text-align: center;
     box-sizing: border-box;
+    
+    background-image: url('fond\ fleches.png');
 }
 
 
 /* Conteneur pour tout le contenu */
-.container {
-    width: 100%; 
-    height: 100vh;
+/* .container {
+    width: 1200px; 
+    height: 800px;
+    border: 1px solid red;
     max-width: none;
     margin: 0;
     padding: 20px;
-    background-image: url('fond\ fleches.png');
     border-radius: 0;
     box-shadow: none;
     color: black;
@@ -29,33 +39,39 @@ body {
     justify-content: center;
     align-items: center;
 
-}
+} */
 
 
 
 header {
-    margin-top: 50px;
     padding: 20px 0;
+    
 }
 
 header h1 {
     font-size: 3rem;
-    color: #FFED65; 
-    margin: 0;
+    color: #FFED65;
     font-weight: bold;
 }
 
 /* Section Générale */
 section {
-    margin: 20px auto;
     width: 90%;
     max-width: 1200px; 
     background-color: white;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     color: black;
 }
+
+.timer, .scores, .points {
+    margin-bottom: 20px;
+    width: 1000px;
+}
+.timer {
+    padding: 20px;
+}
+
 
 /* Timer Section */
 .timer-container {
@@ -121,16 +137,14 @@ section {
 }
 
 .score-box h3 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .score-box .score {
-    font-size: 3rem;
+    font-size: 13rem;
     font-weight: bold;
-    margin: 10px 0;
 }
 
 /* Points Section */
@@ -144,7 +158,6 @@ section {
 .nbrPoint-box {
     flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 20px;
     background-color: white;
@@ -158,14 +171,15 @@ section {
 
 .nbrPoint-box label {
     display: block;
+    flex-basis: 1;
     font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
 .nbrPoint-box input {
     flex: 1;
-    max-width: 300px;
+    max-width: 150px;
+    flex-basis:30px;
     padding: 10px;
     font-size: 1rem;
     text-align: center;
@@ -175,6 +189,7 @@ section {
 }
 
 .nbrPoint-box .btn {
+    flex-basis: 30px;
     background-color: #FFED65;
     color: white;
     padding: 10px 15px;
