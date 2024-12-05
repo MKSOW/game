@@ -109,7 +109,7 @@ section {
     cursor: pointer;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
-    width: 115px; 
+    width: 110px; 
 }
 
 .timer-container .btn:hover {
@@ -178,7 +178,7 @@ section {
 
 .nbrPoint-box input {
     flex: 1;
-    max-width: 80px;
+    max-width: 85px;
     flex-basis:30px;
     padding: 10px;
     font-size: 1rem;
@@ -199,7 +199,7 @@ section {
     cursor: pointer;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
-    width: 115px; 
+    width: 110px; 
 }
 
 .nbrPoint-box .btn:hover {
