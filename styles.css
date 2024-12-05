@@ -205,7 +205,6 @@ section {
 .nbrPoint-box .btn:hover {
     background-color: rgb(236, 179, 7);
 }
-
 @media (max-width: 768px) {
     .scores,
     .points {
@@ -219,45 +218,46 @@ section {
     }
 
     header h1 {
-        font-size: 2rem; /* Réduit la taille du titre */
+        font-size: 2.2rem; /* Réduit légèrement la taille */
     }
 
     .timer-container input {
-        font-size: 0.9rem; /* Réduit la taille des champs */
+        font-size: 1rem;
+        padding: 8px;
     }
 
     .timer-container .btn {
-        font-size: 0.9rem; /* Réduit la taille des boutons */
-        padding: 8px 15px;
+        font-size: 1rem;
+        padding: 10px 15px;
     }
 }
 
 @media (max-width: 480px) {
     body {
-        margin: 10px; /* Réduit la marge globale */
+        margin: 10px; /* Réduit les marges globales */
     }
 
     .scores,
     .points {
-        gap: 10px; /* Réduit l'écart entre les éléments */
+        gap: 10px; /* Réduit l'espacement entre éléments */
     }
 
     .score-box .score {
-        font-size: 8rem; /* Réduit la taille des scores */
+        font-size: 7.5rem; /* Taille légèrement réduite pour les scores */
     }
 
     .nbrPoint-box label {
-        font-size: 0.9rem; /* Taille réduite pour les étiquettes */
+        font-size: 0.9rem;
     }
 
     .nbrPoint-box input {
-        font-size: 0.8rem; /* Taille réduite pour les champs */
-        max-width: 100px; /* Limite la largeur des champs */
+        font-size: 0.85rem;
+        max-width: 90px; /* Réduit encore la largeur des champs */
     }
 
     .timer-container .btn {
-        font-size: 0.8rem; /* Plus petit pour les petits écrans */
-        padding: 5px 10px;
+        font-size: 0.8rem;
+        padding: 6px 12px; /* Ajuste les dimensions */
     }
 }
 
