@@ -109,7 +109,7 @@ section {
     cursor: pointer;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
-    width: 120px; 
+    width: 115px; 
 }
 
 .timer-container .btn:hover {
@@ -178,7 +178,7 @@ section {
 
 .nbrPoint-box input {
     flex: 1;
-    max-width: 150px;
+    max-width: 80px;
     flex-basis:30px;
     padding: 10px;
     font-size: 1rem;
@@ -189,10 +189,9 @@ section {
 }
 
 .nbrPoint-box .btn {
-    flex-basis: 30px;
     background-color: #FFED65;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
     border: none;
@@ -200,6 +199,7 @@ section {
     cursor: pointer;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
+    width: 115px; 
 }
 
 .nbrPoint-box .btn:hover {
