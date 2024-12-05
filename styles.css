@@ -219,25 +219,26 @@ section {
 
  @media (max-width: 535px) {
 
-    .timer,
-    .score-box,
-    .points {
-        width: 450px;
+    
+    .score-box {
+        width: 100%;
         font-size: 10px;
-
+    }
+    .points, .timer {
+        width: 90%;
+        font-size: 10px;
+    }
+    .timer-container {
+        flex-wrap: wrap;
     }
     .timer-container h2 {
-        font-size: 10px;
+        font-size: 1.3rem;
         font-weight: bold;
     }
     .score-box h3 {
-        font-size: 10px;
+        font-size:  1.1rem;
         font-weight: bold;
         text-transform: uppercase;
-    }
-    .timer{
-        display: flex;
-        flex-direction: column;
     }
     .timer-container input {
         flex: 1;
@@ -248,5 +249,15 @@ section {
         border: 2px solid #FFED65;
         border-radius: 5px;
         outline: none;
+    }
+    .timer-container .btn {
+        margin-bottom: 15px;
+        margin-left: 10px;
+    }
+    .nbrPoint-box {
+        flex-wrap: wrap;
+    }
+    .nbrPoint-box input {
+        margin-right: 10px;
     }
  }
