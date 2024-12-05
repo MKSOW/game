@@ -14,34 +14,13 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Assure que le corps couvre au moins 100% de la hauteur de la fenêtre */
+    min-height: 100vh; 
     width: 100%;
     text-align: center;
     box-sizing: border-box;
     
     background-image: url('fond\ fleches.png');
 }
-
-
-/* Conteneur pour tout le contenu */
-/* .container {
-    width: 1200px; 
-    height: 800px;
-    border: 1px solid red;
-    max-width: none;
-    margin: 0;
-    padding: 20px;
-    border-radius: 0;
-    box-shadow: none;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-} */
-
-
 
 header {
     padding: 20px 0;
@@ -97,7 +76,7 @@ section {
     outline: none;
 }
 
-/* Bouton GO et STOP avec taille identique */
+/* Bouton PLAY et STOP avec taille identique */
 .timer-container .btn {
     background-color: #FFED65;
     color: white;
@@ -205,59 +184,69 @@ section {
 .nbrPoint-box .btn:hover {
     background-color: rgb(236, 179, 7);
 }
-@media (max-width: 768px) {
+
+
+ @media  ( max-width: 1500px) { 
+    .timer,
     .scores,
     .points {
+        width: 90%;
+        
+        
+    }
+ }
+
+ @media  ( max-width: 768px) { 
+    .timer,
+    .scores,
+    .points {
+        width: 90%;
+        display: flex;
         flex-direction: column;
-        gap: 15px;
+        
     }
+ }
 
+ @media (max-width: 650px) {
+
+    .timer,
     .score-box,
-    .nbrPoint-box {
-        width: 100%;
-    }
-
-    header h1 {
-        font-size: 2.2rem; /* Réduit légèrement la taille */
-    }
-
-    .timer-container input {
-        font-size: 1rem;
-        padding: 8px;
-    }
-
-    .timer-container .btn {
-        font-size: 1rem;
-        padding: 10px 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        margin: 10px; /* Réduit les marges globales */
-    }
-
-    .scores,
     .points {
-        gap: 10px; /* Réduit l'espacement entre éléments */
-    }
+        width: 450px;
 
-    .score-box .score {
-        font-size: 7.5rem; /* Taille légèrement réduite pour les scores */
     }
+ }
 
-    .nbrPoint-box label {
-        font-size: 0.9rem;
+ @media (max-width: 535px) {
+
+    .timer,
+    .score-box,
+    .points {
+        width: 450px;
+        font-size: 10px;
+
     }
-
-    .nbrPoint-box input {
-        font-size: 0.85rem;
-        max-width: 90px; /* Réduit encore la largeur des champs */
+    .timer-container h2 {
+        font-size: 10px;
+        font-weight: bold;
     }
-
-    .timer-container .btn {
-        font-size: 0.8rem;
-        padding: 6px 12px; /* Ajuste les dimensions */
+    .score-box h3 {
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
     }
-}
-
+    .timer{
+        display: flex;
+        flex-direction: column;
+    }
+    .timer-container input {
+        flex: 1;
+        min-width: 90px;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+        border: 2px solid #FFED65;
+        border-radius: 5px;
+        outline: none;
+    }
+ }
