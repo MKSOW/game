@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowzer - Jeu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div class="container">
+    <body>
+
+        <header>
+            <img src="logo-azerty.png" alt="Logo de l'application" class="logo">
+        </header>
+
+        <main>
+            <!-- Timer Section -->
+            <section class="timer">
+                <div class="timer-container">
+                    <h2>TIMER (SECONDES) :</h2>
+                    <input type="number" id="duree-manche" placeholder="Durée" />
+                    <button class="btn btn-go" id="start-button">GO !</button>
+                    <button class="btn btn-go" id="stop-button">STOP</button>
+                </div>
+                <h2 id="timer-display">Temps restant : 0</h2>
+            </section>
+
+            <!-- Scores Section -->
+            <section class="scores">
+                <!-- Équipe 1 -->
+                <div class="score-box">
+                    <h3>ÉQUIPE 1</h3>
+                    <p id="score-equipe1" class="score">0</p>
+                </div>
+
+                <!-- Équipe 2 -->
+                <div class="score-box">
+                    <h3>ÉQUIPE 2</h3>
+                    <p id="score-equipe2" class="score">0</p>
+                </div>
+            </section>
+
+            <section class="points">
+                <!-- Équipe 1 -->
+                <div class="nbrPoint-box">
+                    <label for="points-equipe1">NOMBRE DE POINTS  :</label>
+                    <input type="number" id="points-equipe1" placeholder="Points">
+                    <button class="btn" id="add-equipe1">Add</button>
+                </div>
+                <!-- Équipe 2 -->
+                <div class="nbrPoint-box">
+                    <label for="points-equipe2">NOMBRE DE POINTS :</label>
+                    <input type="number" id="points-equipe2" placeholder="points">
+                    <button class="btn" id="add-equipe2">Add</button>
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</div>
+</html>
