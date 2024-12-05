@@ -206,7 +206,6 @@ section {
     background-color: rgb(236, 179, 7);
 }
 
-/* Responsivité */
 @media (max-width: 768px) {
     .scores,
     .points {
@@ -216,6 +215,49 @@ section {
 
     .score-box,
     .nbrPoint-box {
-        width: 100%; 
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Réduit la taille du titre */
+    }
+
+    .timer-container input {
+        font-size: 0.9rem; /* Réduit la taille des champs */
+    }
+
+    .timer-container .btn {
+        font-size: 0.9rem; /* Réduit la taille des boutons */
+        padding: 8px 15px;
     }
 }
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px; /* Réduit la marge globale */
+    }
+
+    .scores,
+    .points {
+        gap: 10px; /* Réduit l'écart entre les éléments */
+    }
+
+    .score-box .score {
+        font-size: 8rem; /* Réduit la taille des scores */
+    }
+
+    .nbrPoint-box label {
+        font-size: 0.9rem; /* Taille réduite pour les étiquettes */
+    }
+
+    .nbrPoint-box input {
+        font-size: 0.8rem; /* Taille réduite pour les champs */
+        max-width: 100px; /* Limite la largeur des champs */
+    }
+
+    .timer-container .btn {
+        font-size: 0.8rem; /* Plus petit pour les petits écrans */
+        padding: 5px 10px;
+    }
+}
+
